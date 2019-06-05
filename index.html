@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Quiz using Vue.js ">
+    <title>Quiz</title>
+    <body>
+      <!-- Vue works with this div -->
+      <div id="app">
+        <!-- Vue's data.title displayed here -->
+        <h1>{{ title }}</h1>
+      </div>
+      
+      <!-- load Vue script  -->
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <!-- on load, init vue -->
+      <script>
+        window.onload= function () {
+            new Vue ({
+              el: '#app', // Vue workks with this div (see line 4)
+              data: {title: 'Hello.' }, // title is set to'Hello'
+            });
+        }
+      </script>
+        </body>
