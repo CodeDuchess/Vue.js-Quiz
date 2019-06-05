@@ -1,1 +1,1 @@
-
+window.obload = function
